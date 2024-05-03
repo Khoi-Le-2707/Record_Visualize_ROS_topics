@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- <arg name="topic_1" default="-a"/>  -->
+    <arg name="topic_1" default=""/>
+    <arg name="topic_2" default=""/>
+    <arg name="topic_3" default=""/>
+
+    <node pkg="my_rosbag_pkg" type="log_topics.py" name="log_topics" output="screen">
+        <param name="topic_1" type="string" value="$(arg topic_1)"/>
+        <param name="topic_2" type="string" value="$(arg topic_2)"/>
+        <param name="topic_3" type="string" value="$(arg topic_3)"/>
+    </node>
+
+</launch>
