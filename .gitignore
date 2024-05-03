@@ -1,3 +1,4 @@
+catkin_ws/.catkin_workspace
 devel/
 logs/
 build/
@@ -30,7 +31,7 @@ devel_isolated/
 .cproject
 
 # qcreator stuff
-CMakeLists.txt.user
+catkin_ws/src/CMakeLists.txt.user
 
 srv/_*.py
 *.pcd
@@ -51,15 +52,15 @@ qtcreator-*
 CATKIN_IGNORE
 
 #VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+catkin_ws/src/.vscode/*
+catkin_ws/src/!.vscode/settings.json
+catkin_ws/src/!.vscode/tasks.json
+catkin_ws/src/!.vscode/launch.json
+catkin_ws/src/!.vscode/extensions.json
+catkin_ws/src/!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
-.history/
+catkin_ws/src/.history/
 
 # Built Visual Studio Code Extensions
-*.vsix
+catkin_ws/src/*.vsix
